@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "62f47152-189a-4d83-8e74-bf648583a98c",
+		"name": "Foodies API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Food",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "food",
+							"value": "{\n    \"name\": \"test 2\",\n    \"description\": \"description\",\n    \"category\": \"test 2 category\",\n    \"price\": 200.00\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/bushansirgur/Downloads/Downloads/My photos/ba7eb145-9bf4-4e8b-a4d4-1baeffff2eb0-removebg-preview.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Foods",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "food",
+							"value": "{\n    \"name\": \"test 2\",\n    \"description\": \"description\",\n    \"category\": \"test 2 category\",\n    \"price\": 200.00\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/bushansirgur/Desktop/Screenshot 2025-02-09 at 9.34.34 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Food",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "food",
+							"value": "{\n    \"name\": \"test 2\",\n    \"description\": \"description\",\n    \"category\": \"test 2 category\",\n    \"price\": 200.00\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/bushansirgur/Desktop/Screenshot 2025-02-09 at 9.34.34 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/foods/69ded99a7a41fe28441f0fce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"foods",
+						"69ded99a7a41fe28441f0fce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Food",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "food",
+							"value": "{\n    \"name\": \"test 2\",\n    \"description\": \"description\",\n    \"category\": \"test 2 category\",\n    \"price\": 200.00\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/bushansirgur/Desktop/Screenshot 2025-02-09 at 9.34.34 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/foods/67c473cf2cdf3b1a7ef27625",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"foods",
+						"67c473cf2cdf3b1a7ef27625"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Eric\",\n    \"email\": \"eric@example.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"eric@example.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to cart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlcmljQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc2MjEyNjA0LCJleHAiOjE3NzYyNDg2MDR9.XTG-fPvQrOgvwnBX918Ecv1mGp7FJJlba4FtkYU2oWM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodId\": \"69ded99a7a41fe28441f0fce\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJhcm5hQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc2MjA4NjA2LCJleHAiOjE3NzYyNDQ2MDZ9.g39NCUY1UikMl2VzZ2GSoFZ_VDwZi7FKWQVBhQleZ84",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodId\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear cart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MkBleGFtcGxlLmNvbSIsImlhdCI6MTc0MTI0NDU0NywiZXhwIjoxNzQxMjgwNTQ3fQ.2X84oMD4ObnRLhAo9dkNZ62miIOCSyLxYncHVNSCFCM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove from cart",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0M0BleGFtcGxlLmNvbSIsImlhdCI6MTc0MTI0NTc3NCwiZXhwIjoxNzQxMjgxNzc0fQ.g07qDXxNTAmknlZ9kCkLlixtd1WpKdlq9x6wxv1nYx0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodId\": \"67c6a1e4a1261044d5133497\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI0NjUxLCJleHAiOjE3NDEzNjA2NTF9.VA4bk5EDgVfoxuSVCDRIrr6NByb0IMiG6cJPANIkKuM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderedItems\": [\n        {\"foodId\": \"67c6a1b7a1261044d5133496\", \"price\": 350.0, \"quantity\": 2}\n    ],\n    \"userAddress\": \"Banglore\",\n    \"email\":\"test@exapmle.com\",\n    \"phoneNumber\": \"1234567890\",\n    \"amount\": \"300\",\n    \"orderStatus\": \"Preparing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify payment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI5OTIwLCJleHAiOjE3NDEzNjU5MjB9.OaW1eyoJZzEiYqwEOWOfyVhXgVxYbHUmzE7We56VzRU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"razorpay_order_id\": \"order_Q3mYUskF6fSrz9\",\n    \"razorpay_signature\": \"test signature\",\n    \"razorpay_payment_id\": \"test payment id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI0NjUxLCJleHAiOjE3NDEzNjA2NTF9.VA4bk5EDgVfoxuSVCDRIrr6NByb0IMiG6cJPANIkKuM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"razorpay_order_id\": \"order_Q3mYUskF6fSrz9\",\n    \"razorpay_signature\": \"test signature\",\n    \"razorpay_payment_id\": \"test payment id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI0NjUxLCJleHAiOjE3NDEzNjA2NTF9.VA4bk5EDgVfoxuSVCDRIrr6NByb0IMiG6cJPANIkKuM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"razorpay_order_id\": \"order_Q3mYUskF6fSrz9\",\n    \"razorpay_signature\": \"test signature\",\n    \"razorpay_payment_id\": \"test payment id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update order status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI0NjUxLCJleHAiOjE3NDEzNjA2NTF9.VA4bk5EDgVfoxuSVCDRIrr6NByb0IMiG6cJPANIkKuM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"razorpay_order_id\": \"order_Q3mYUskF6fSrz9\",\n    \"razorpay_signature\": \"test signature\",\n    \"razorpay_payment_id\": \"test payment id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/status/67ca817a5a70e11169096f9e?status=Out for delivery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"status",
+						"67ca817a5a70e11169096f9e"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "Out for delivery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzI0NjUxLCJleHAiOjE3NDEzNjA2NTF9.VA4bk5EDgVfoxuSVCDRIrr6NByb0IMiG6cJPANIkKuM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"razorpay_order_id\": \"order_Q3mYUskF6fSrz9\",\n    \"razorpay_signature\": \"test signature\",\n    \"razorpay_payment_id\": \"test payment id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/67ca817a5a70e11169096f9e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"67ca817a5a70e11169096f9e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
