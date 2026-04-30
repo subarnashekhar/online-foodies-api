@@ -1,6 +1,5 @@
 package com.techsmart.foodiesapi.controller;
 
-import com.razorpay.RazorpayException;
 import com.techsmart.foodiesapi.io.OrderRequest;
 import com.techsmart.foodiesapi.io.OrderResponse;
 import com.techsmart.foodiesapi.service.OrderService;
@@ -20,7 +19,8 @@ public class OrderController {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public OrderResponse createOrderWithPayment(@RequestBody OrderRequest request) throws RazorpayException {
+    public OrderResponse createOrderWithPayment(@RequestBody OrderRequest request) throws Exception {
+
         OrderResponse response = orderService.createOrderWithPayment(request);
         return response;
     }

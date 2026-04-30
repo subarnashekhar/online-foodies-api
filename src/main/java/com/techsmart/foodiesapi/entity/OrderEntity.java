@@ -21,8 +21,8 @@ public class OrderEntity {
     private List<OrderItem> orderedItems;
     private double amount;
     private String paymentStatus;
-    private String razorpayOrderId;
-    private String razorpaySignature;
-    private String razorpayPaymentId;
+    private String stripeOrderId;
+    private String stripeClientSecret;
+    private String stripePaymentId;
     private String orderStatus;
 }

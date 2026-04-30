@@ -1,6 +1,5 @@
 package com.techsmart.foodiesapi.service;
 
-import com.razorpay.RazorpayException;
 import com.techsmart.foodiesapi.io.OrderRequest;
 import com.techsmart.foodiesapi.io.OrderResponse;
 
@@ -9,7 +8,7 @@ import java.util.Map;
 
 public interface OrderService {
 
-    OrderResponse createOrderWithPayment(OrderRequest request) throws RazorpayException;
+    OrderResponse createOrderWithPayment(OrderRequest request) throws Exception;
 
     void verifyPayment(Map<String, String> paymentData, String status);
 
